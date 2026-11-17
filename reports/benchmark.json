@@ -1,0 +1,63 @@
+{
+  "project": "MAGIC Gamma Event Classifier",
+  "dataset_id": 159,
+  "rows": 19020,
+  "features": [
+    "fLength",
+    "fWidth",
+    "fSize",
+    "fConc",
+    "fConc1",
+    "fAsym",
+    "fM3Long",
+    "fM3Trans",
+    "fAlpha",
+    "fDist"
+  ],
+  "targets": [
+    "class"
+  ],
+  "split": "random 75/25 holdout; seed=42",
+  "task": "classification",
+  "holdout": {
+    "accuracy": 0.8811777076761304,
+    "balanced_accuracy": 0.8585502066433148,
+    "macro_f1": 0.86655564578534,
+    "weighted_f1": 0.87966347890345,
+    "majority_baseline_accuracy": 0.6483701366982124,
+    "per_class": {
+      "g": {
+        "precision": 0.8878619839802834,
+        "recall": 0.9348037625689264,
+        "f1-score": 0.910728393111076,
+        "support": 3083
+      },
+      "h": {
+        "precision": 0.8667992047713717,
+        "recall": 0.7822966507177034,
+        "f1-score": 0.8223828984596039,
+        "support": 1672
+      },
+      "accuracy": 0.8811777076761304,
+      "macro avg": {
+        "precision": 0.8773305943758276,
+        "recall": 0.8585502066433148,
+        "f1-score": 0.86655564578534,
+        "support": 4755
+      },
+      "weighted avg": {
+        "precision": 0.8804556818062981,
+        "recall": 0.8811777076761304,
+        "f1-score": 0.87966347890345,
+        "support": 4755
+      }
+    },
+    "roc_auc": 0.9373623606534988
+  },
+  "limitations": "Public benchmark; holdout results do not establish production performance. Telescope events are Monte Carlo simulations.",
+  "source_url": "https://archive.ics.uci.edu/dataset/159",
+  "generated_at": "2026-11-17",
+  "artifacts_published": [
+    "reports/benchmark.json"
+  ]
+}
